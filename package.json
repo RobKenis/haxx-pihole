@@ -45,5 +45,9 @@
     "not ie <= 8"
   ],
   "keywords": [],
-  "description": ""
+  "description": "",
+  "author": "Rob Kenis",
+  "vue": {
+    "publicPath": "/haxx-pihole/"
+  }
 }
