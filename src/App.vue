@@ -4,6 +4,7 @@
       <div class="slides">
         <TitleSlide/>
         <WhatIsPihole/>
+        <InstallingPihole/>
       </div>
     </div>
   </div>
@@ -18,10 +19,11 @@ import "reveal.js/dist/theme/night.css";
 import "reveal.js/plugin/highlight/monokai.css";
 import TitleSlide from "@/components/TitleSlide.vue";
 import WhatIsPihole from "@/components/WhatIsPihole.vue";
+import InstallingPihole from "@/components/InstallingPihole.vue";
 
 export default {
   name: "App",
-  components: {TitleSlide, WhatIsPihole},
+  components: {InstallingPihole, TitleSlide, WhatIsPihole},
   mounted() {
     Reveal.initialize({
       plugins: [Markdown, Highlight],
