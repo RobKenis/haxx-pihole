@@ -5,6 +5,7 @@
         <TitleSlide/>
         <WhatIsPihole/>
         <InstallingPihole/>
+        <InitialStatistics/>
       </div>
     </div>
   </div>
@@ -20,10 +21,11 @@ import "reveal.js/plugin/highlight/monokai.css";
 import TitleSlide from "@/components/TitleSlide.vue";
 import WhatIsPihole from "@/components/WhatIsPihole.vue";
 import InstallingPihole from "@/components/InstallingPihole.vue";
+import InitialStatistics from "@/components/InitialStatistics.vue";
 
 export default {
   name: "App",
-  components: {InstallingPihole, TitleSlide, WhatIsPihole},
+  components: {InitialStatistics, InstallingPihole, TitleSlide, WhatIsPihole},
   mounted() {
     Reveal.initialize({
       plugins: [Markdown, Highlight],
@@ -31,6 +33,7 @@ export default {
         breaks: true,
         gfm: true,
       },
+      autoPlayMedia: true
     });
   },
 };
