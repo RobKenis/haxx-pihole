@@ -2,8 +2,8 @@
   <div id="app">
     <div class="reveal">
       <div class="slides">
-        <section data-background-image="assets/title.png" data-background-size="cover" data-background-opacity="0.3"><TitleSlide/></section>
-        <section><WhatIsPihole/></section>
+        <TitleSlide/>
+        <WhatIsPihole/>
       </div>
     </div>
   </div>

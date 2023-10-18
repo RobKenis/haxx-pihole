@@ -1,7 +1,9 @@
 <template>
-  <div id="content">
-    <h1>How I overegineered a Pi-hole</h1>
-  </div>
+  <section data-background-image="assets/title.png" data-background-size="cover" data-background-opacity="0.3">
+    <div id="content">
+      <h1>How I overegineered a Pi-hole</h1>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -12,6 +14,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
+
 #content {
   display: flex;
   flex-direction: column;
@@ -19,7 +22,8 @@ export default {
   align-items: center;
   height: 100%;
 }
+
 h1 {
-  font-family: 'Patua One',serif;
+  font-family: 'Patua One', serif;
 }
 </style>
