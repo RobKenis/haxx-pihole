@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  hello:
+    cmds:
+      - echo 'Hello World from Task!'
+    silent: true
+  dev:
+    cmds:
+      - docker run --name haxx-pihole-slides -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx
+  docker-clean:
+    cmds:
+      - docker rm -f haxx-pihole-slides
