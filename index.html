@@ -33,7 +33,7 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/keyboard.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">What is a pi-hole</h1>
+                <h1 class="text-landing">What is a pi-hole</h1>
             </div>
         </section>
 
@@ -57,7 +57,7 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/signpost.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">What is DNS</h1>
+                <h1 class="text-landing">What is DNS</h1>
             </div>
         </section>
 
@@ -77,7 +77,7 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/containers.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Containers</h1>
+                <h1 class="text-landing">Containers</h1>
             </div>
         </section>
 
@@ -110,7 +110,7 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/monitoring.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Monitoring</h1>
+                <h1 class="text-landing">Monitoring</h1>
             </div>
         </section>
 
@@ -128,7 +128,7 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/architecture.png')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Is it good enough?</h1>
+                <h1 class="text-landing">Is it good enough?</h1>
             </div>
         </section>
 
@@ -150,15 +150,127 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/sailing.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Kubernetes</h1>
+                <h1 class="text-landing">Kubernetes</h1>
             </div>
         </section>
+
+        <section class="slide">
+            <div class="wrap">
+                <ul class="flexblock gallery">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img alt="Ansible" src="public/assets/ansible.png">
+                                <figcaption>
+                                    <h2>Deploy Kubernetes</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img alt="Kubernetes" src="public/assets/kubernetes.png">
+                                <figcaption>
+                                    <h2>Run containers</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img alt="ArgoCD" src="public/assets/argo.png">
+                                <figcaption>
+                                    <h2>Apply configuration</h2>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide bg-black">
+            <img class="aligncenter size-80" src="public/assets/argo-pihole.png"/>
+        </section>
+
+        <!-- CILIUM -->
+        <section class="bg-black">
+            <span class="background dark" style="background-image:url('public/assets/highway.png')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">Cilium</h1>
+            </div>
+        </section>
+
+        <section class="fullscreen slide">
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <blockquote>
+                            <p>“eBPF is a revolutionary technology with origins in the Linux kernel that can run
+                                sandboxed programs in a privileged context such as the operating system kernel. It is
+                                used to safely and efficiently extend the capabilities of the kernel without requiring
+                                to change kernel source code or load kernel modules.”</p>
+                            <p><cite>eBPF docs</cite></p>
+                        </blockquote>
+                    </div>
+                    <div class="column">
+                        <blockquote>
+                            <p>“eBPF, which stands for extended Berkeley Packet Filter, is like a little wizard's spell
+                                book that helps you write special rules for your magic telescope. These rules let you
+                                peek inside the pathway and see what the tiny creatures are doing.”</p>
+                            <p><cite>ChatGPT</cite></p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fullscreen slide">
+            <div class="card-50">
+                <img src="public/assets/cilium.png" alt="Cilium">
+                <div class="flex-content cilium">
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            <h2>bpfilter over iptables</h2>
+                            <ul style="list-style-type: circle;">
+                                <li>Filtering moved to kernel space</li>
+                                <li>More performance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>NetworkPolicies</h2>
+                            <ul style="list-style-type: circle;">
+                                <li>Namespace isolation</li>
+                                <li>L7 traffic control</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Hubble</h2>
+                            <ul style="list-style-type: circle;">
+                                <li>Network observability</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide">
+            <img class="aligncenter size-80" src="public/assets/cilium-pihole.png"/>
+        </section>
+
+        <section class="slide">
+            <img class="aligncenter size-80" src="public/assets/cilium-media.png"/>
+        </section>
+
 
         <!-- SECURITY -->
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/security-guard.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Security</h1>
+                <h1 class="text-landing">Security</h1>
             </div>
         </section>
 
@@ -166,8 +278,13 @@
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/mountains.jpg')"></span>
             <div class="wrap">
-                <h1 class="text-landing nasa">Ad blocking on the go</h1>
+                <h1 class="text-landing">Ad blocking on the go</h1>
             </div>
+        </section>
+
+        <!-- THIS IS IT -->
+        <section class="slide">
+            <img class="size-80 aligncenter" src="public/assets/this-is-it-2.png" alt="This is it">
         </section>
 
     </article>
