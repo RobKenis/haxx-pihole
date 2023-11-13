@@ -10,6 +10,7 @@
     <link rel="stylesheet" type='text/css' media='all' href="public/css/main.css">
     <link rel="stylesheet" type='text/css' media='all' href="public/css/svg-icons.css">
     <link rel="stylesheet" type='text/css' media='all' href="public/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" type='text/css' media='all' href="public/css/prism.css">
 
     <title>How I overengineered a Pi-hole</title>
 </head>
@@ -80,11 +81,68 @@
             </div>
         </section>
 
+        <section class="slide">
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <pre class="language-yaml"><code>- name: Make sure the pihole container is created and running
+  docker_container:
+    name: "pihole"
+    image: pihole/pihole
+    state: 'started'
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+    env:
+      "TZ": "Europe/Brussels"
+    restart_policy: unless-stopped
+</code></pre>
+                    </div>
+                    <div class="column">
+                        <pre class="language-bash"><code>$ ansible-playbook run.yml</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- MONITORING -->
         <section class="bg-black">
             <span class="background dark" style="background-image:url('public/assets/monitoring.jpg')"></span>
             <div class="wrap">
                 <h1 class="text-landing nasa">Monitoring</h1>
+            </div>
+        </section>
+
+        <section class="slide bg-black">
+            <div class="wrap">
+                <img class="aligncenter size-80" src="public/assets/grafana-pihole-exporter.png"/>
+            </div>
+        </section>
+
+        <section class="slide bg-black">
+            <img class="aligncenter size-80" src="public/assets/grafana-blocked-domains.png"/>
+        </section>
+
+        <!-- IS IT GOOD ENOUGH -->
+        <section class="bg-black">
+            <span class="background dark" style="background-image:url('public/assets/architecture.png')"></span>
+            <div class="wrap">
+                <h1 class="text-landing nasa">Is it good enough?</h1>
+            </div>
+        </section>
+
+        <section class="fullscreen slide">
+            <div class="card-50">
+                <figure>
+                    <img src="public/assets/kelsey-hightower.png" alt="Kelsey Hightower">
+                </figure>
+                <div class="flex-content">
+                    <blockquote>
+                        <p>“Using Kubernetes on a single server is like using a sledgehammer to crack a nut.”</p>
+                        <p><cite>Kelsey Hightower</cite></p>
+                    </blockquote>
+                </div>
             </div>
         </section>
 
@@ -116,6 +174,7 @@
 </main>
 
 <script src="public/js/webslides.js"></script>
+<script src="public/js/prism.js"></script>
 <script>
     window.ws = new WebSlides();
 </script>
