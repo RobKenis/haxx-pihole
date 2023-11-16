@@ -83,8 +83,6 @@
 
         <section class="slide">
             <div class="wrap">
-                <div class="grid vertical-align">
-                    <div class="column">
                         <pre class="language-yaml"><code>- name: Make sure the pihole container is created and running
   docker_container:
     name: "pihole"
@@ -98,11 +96,6 @@
       "TZ": "Europe/Brussels"
     restart_policy: unless-stopped
 </code></pre>
-                    </div>
-                    <div class="column">
-                        <pre class="language-bash"><code>$ ansible-playbook run.yml</code></pre>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -133,13 +126,13 @@
         </section>
 
         <section class="fullscreen slide">
-            <div class="card-50">
+            <div class="card-80">
                 <figure>
                     <img src="public/assets/kelsey-hightower.png" alt="Kelsey Hightower">
                 </figure>
                 <div class="flex-content">
                     <blockquote>
-                        <p>“Using Kubernetes on a single server is like using a sledgehammer to crack a nut.”</p>
+                        <h3>“Using Kubernetes on a single server is like using a sledgehammer to crack a nut.”</h3>
                         <p><cite>Kelsey Hightower</cite></p>
                     </blockquote>
                 </div>
